@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="rfid"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rfid.elf">
+				<Option output="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/rfid.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 rfid.elf"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rfid.elf/fast">
+				<Option output="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/rfid.elf" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DDEBUG"/>
+					<Add option="-DUSE_HAL_DRIVER"/>
+					<Add option="-DSTM32F407xx"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Device/ST/STM32F4xx/Include"/>
+					<Add directory="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/arm-none-eabi"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include/c++/10.2.1/backward"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/include-fixed"/>
+					<Add directory="c:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 rfid.elf/fast"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~1/JETBRA~1/CLION2~1.2/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/MFRC522.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/integer.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/main.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/ssd1306.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/ssd1306_conf_template.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/ssd1306_fonts.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/ssd1306_tests.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/stm32f4xx_hal_conf.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/stm32f4xx_it.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/main.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ssd1306.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ssd1306_fonts.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ssd1306_tests.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/stm32f4xx_hal_msp.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/stm32f4xx_it.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/syscalls.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/sysmem.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/system_stm32f4xx.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Startup/startup_stm32f407vgtx.s">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Device/ST/STM32F4xx/LICENSE.txt">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/cmsis_armcc.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/cmsis_armclang.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/cmsis_compiler.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/cmsis_gcc.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/cmsis_iccarm.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/cmsis_version.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_armv8mbl.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_armv8mml.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm0.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm0plus.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm1.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm23.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm3.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm33.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm4.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_cm7.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_sc000.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/core_sc300.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/mpu_armv7.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/mpu_armv8.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/Include/tz_context.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/CMSIS/LICENSE.txt">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_i2c_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_cortex.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_dma.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_exti.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_gpio.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_i2c.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_pwr.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_rcc.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/LICENSE.txt">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/STM32F407VGTX_FLASH.ld">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

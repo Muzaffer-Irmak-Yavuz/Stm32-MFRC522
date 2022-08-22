@@ -1,0 +1,3 @@
+C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/CMakeFiles/rfid.elf.dir
+C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/CMakeFiles/rebuild_cache.dir

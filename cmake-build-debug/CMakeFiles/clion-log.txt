@@ -1,0 +1,5 @@
+"C:\Program Files\JetBrains\CLion 2022.2\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" -S C:\Users\Muzaffer\CLionProjects\rfid -B C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug
+-- Minimal optimization, debug info included
+-- Configuring done
+-- Generating done
+-- Build files have been written to: C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug

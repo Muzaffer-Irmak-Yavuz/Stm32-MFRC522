@@ -1,0 +1,20 @@
+CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj: \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Src\sysmem.c \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\errno.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\errno.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\reent.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\_ansi.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\newlib.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\_newlib_version.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\config.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\machine\ieeefp.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\features.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\lib\gcc\arm-none-eabi\10.2.1\include\stddef.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\_types.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\machine\_types.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\machine\_default_types.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\lock.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\lib\gcc\arm-none-eabi\10.2.1\include\stdint.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\stdint.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\_intsup.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\_stdint.h
