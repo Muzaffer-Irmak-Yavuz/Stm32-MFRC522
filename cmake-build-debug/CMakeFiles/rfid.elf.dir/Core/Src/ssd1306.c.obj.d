@@ -42,6 +42,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj: \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
  c\:\users\muzaffer\clionprojects\rfid\core\inc\ssd1306_fonts.h \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\math.h \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\reent.h \

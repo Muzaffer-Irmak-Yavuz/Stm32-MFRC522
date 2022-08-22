@@ -68,10 +68,24 @@ include CMakeFiles/rfid.elf.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/rfid.elf.dir/flags.make
 
+CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj: CMakeFiles/rfid.elf.dir/flags.make
+CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj: ../Core/Src/ESP8266.c
+CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj"
+	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\ESP8266.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\ESP8266.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\ESP8266.c
+
+CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.i"
+	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\ESP8266.c > CMakeFiles\rfid.elf.dir\Core\Src\ESP8266.c.i
+
+CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.s"
+	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\ESP8266.c -o CMakeFiles\rfid.elf.dir\Core\Src\ESP8266.c.s
+
 CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj: ../Core/Src/main.c
 CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\main.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\main.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\main.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/main.c.i: cmake_force
@@ -85,7 +99,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/main.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj: ../Core/Src/ssd1306.c
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\ssd1306.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\ssd1306.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\ssd1306.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.i: cmake_force
@@ -99,7 +113,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj: ../Core/Src/ssd1306_fonts.c
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\ssd1306_fonts.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\ssd1306_fonts.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\ssd1306_fonts.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.i: cmake_force
@@ -113,7 +127,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.obj: ../Core/Src/ssd1306_tests.c
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\ssd1306_tests.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\ssd1306_tests.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\ssd1306_tests.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.i: cmake_force
@@ -127,7 +141,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_tests.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: ../Core/Src/stm32f4xx_hal_msp.c
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\stm32f4xx_hal_msp.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\stm32f4xx_hal_msp.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.i: cmake_force
@@ -141,7 +155,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_hal_msp.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj: ../Core/Src/stm32f4xx_it.c
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\stm32f4xx_it.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\stm32f4xx_it.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\stm32f4xx_it.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.i: cmake_force
@@ -155,7 +169,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.obj: ../Core/Src/syscalls.c
 CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\syscalls.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\syscalls.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\syscalls.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.i: cmake_force
@@ -169,7 +183,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/syscalls.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj: ../Core/Src/sysmem.c
 CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\sysmem.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\sysmem.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\sysmem.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.i: cmake_force
@@ -183,7 +197,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/sysmem.c.s: cmake_force
 CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.obj: ../Core/Src/system_stm32f4xx.c
 CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.obj -MF CMakeFiles\rfid.elf.dir\Core\Src\system_stm32f4xx.c.obj.d -o CMakeFiles\rfid.elf.dir\Core\Src\system_stm32f4xx.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Src\system_stm32f4xx.c
 
 CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.i: cmake_force
@@ -196,7 +210,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/system_stm32f4xx.c.s: cmake_force
 
 CMakeFiles/rfid.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj: ../Core/Startup/startup_stm32f407vgtx.s
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building ASM object CMakeFiles/rfid.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building ASM object CMakeFiles/rfid.elf.dir/Core/Startup/startup_stm32f407vgtx.s.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(ASM_DEFINES) $(ASM_INCLUDES) $(ASM_FLAGS) -o CMakeFiles\rfid.elf.dir\Core\Startup\startup_stm32f407vgtx.s.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Core\Startup\startup_stm32f407vgtx.s
 
 CMakeFiles/rfid.elf.dir/Core/Startup/startup_stm32f407vgtx.s.i: cmake_force
@@ -210,7 +224,7 @@ CMakeFiles/rfid.elf.dir/Core/Startup/startup_stm32f407vgtx.s.s: cmake_force
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.i: cmake_force
@@ -224,7 +238,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.s: cmak
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_cortex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.i: cmake_force
@@ -238,7 +252,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.i: cmake_force
@@ -252,7 +266,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.s: 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_dma_ex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.i: cmake_force
@@ -266,7 +280,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_exti.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.i: cmake_force
@@ -280,7 +294,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.s:
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.i: cmake_force
@@ -294,7 +308,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.s
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.i: cmake_force
@@ -308,7 +322,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_flash_ramfunc.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.i: cmake_force
@@ -322,7 +336,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ram
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_gpio.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.i: cmake_force
@@ -336,7 +350,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.s:
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.i: cmake_force
@@ -350,7 +364,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c.c.s: 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_i2c_ex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.i: cmake_force
@@ -364,7 +378,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_i2c_ex.c.
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.i: cmake_force
@@ -378,7 +392,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.s: 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_pwr_ex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.i: cmake_force
@@ -392,7 +406,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.i: cmake_force
@@ -406,7 +420,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.s: 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_rcc_ex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.i: cmake_force
@@ -420,7 +434,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_spi.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.i: cmake_force
@@ -434,7 +448,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.s: 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.i: cmake_force
@@ -448,7 +462,7 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.s: 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/rfid.elf.dir/flags.make
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c
 
 CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.i: cmake_force
@@ -459,8 +473,23 @@ CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s"
 	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_tim_ex.c.s
 
+CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/rfid.elf.dir/flags.make
+CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: ../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c
+CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: CMakeFiles/rfid.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building C object CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj -MF CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj.d -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.obj -c C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c
+
+CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i"
+	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c > CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.i
+
+CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s"
+	C:\Users\Muzaffer\Desktop\gcc-arm-none-eabi-10-2020-q4-major\bin\arm-none-eabi-gcc.exe $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S C:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c -o CMakeFiles\rfid.elf.dir\Drivers\STM32F4xx_HAL_Driver\Src\stm32f4xx_hal_uart.c.s
+
 # Object files for target rfid.elf
 rfid_elf_OBJECTS = \
+"CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj" \
 "CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj" \
 "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj" \
 "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj" \
@@ -488,11 +517,13 @@ rfid_elf_OBJECTS = \
 "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj" \
 "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj" \
 "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" \
-"CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
+"CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" \
+"CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
 
 # External object files for target rfid.elf
 rfid_elf_EXTERNAL_OBJECTS =
 
+rfid.elf: CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj
 rfid.elf: CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj
 rfid.elf: CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj
 rfid.elf: CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj
@@ -521,9 +552,10 @@ rfid.elf: CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal
 rfid.elf: CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
 rfid.elf: CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
 rfid.elf: CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+rfid.elf: CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
 rfid.elf: CMakeFiles/rfid.elf.dir/build.make
 rfid.elf: CMakeFiles/rfid.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Linking C executable rfid.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Muzaffer\CLionProjects\rfid\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Linking C executable rfid.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\rfid.elf.dir\link.txt --verbose=$(VERBOSE)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/rfid.hex"
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold "Building C:/Users/Muzaffer/CLionProjects/rfid/cmake-build-debug/rfid.bin"

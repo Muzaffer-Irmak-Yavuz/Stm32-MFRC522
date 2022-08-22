@@ -30,6 +30,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ESP8266.c" "CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj.d"
   "C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/main.c" "CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj.d"
   "C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ssd1306.c" "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj.d"
   "C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ssd1306_fonts.c" "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306_fonts.c.obj.d"
@@ -57,6 +58,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj.d"
   "C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj.d"
   "C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj.d"
+  "C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj" "gcc" "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d"
   )
 
 # Targets to which this target links.

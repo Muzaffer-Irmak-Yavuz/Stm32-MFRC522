@@ -37,4 +37,5 @@ CMakeFiles/rfid.elf.dir/Core/Src/stm32f4xx_it.c.obj: \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/stm32f4xx_it.h

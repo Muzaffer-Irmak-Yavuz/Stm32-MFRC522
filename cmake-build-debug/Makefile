@@ -128,6 +128,30 @@ rfid.elf/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/build
 .PHONY : rfid.elf/fast
 
+Core/Src/ESP8266.obj: Core/Src/ESP8266.c.obj
+.PHONY : Core/Src/ESP8266.obj
+
+# target to build an object file
+Core/Src/ESP8266.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj
+.PHONY : Core/Src/ESP8266.c.obj
+
+Core/Src/ESP8266.i: Core/Src/ESP8266.c.i
+.PHONY : Core/Src/ESP8266.i
+
+# target to preprocess a source file
+Core/Src/ESP8266.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.i
+.PHONY : Core/Src/ESP8266.c.i
+
+Core/Src/ESP8266.s: Core/Src/ESP8266.c.s
+.PHONY : Core/Src/ESP8266.s
+
+# target to generate assembly for a file
+Core/Src/ESP8266.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.s
+.PHONY : Core/Src/ESP8266.c.s
+
 Core/Src/main.obj: Core/Src/main.c.obj
 .PHONY : Core/Src/main.obj
 
@@ -784,6 +808,30 @@ Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s
 .PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.s
 
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj
+
+# target to build an object file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i
+
+# target to preprocess a source file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.i
+
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s: Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s
+
+# target to generate assembly for a file
+Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\rfid.elf.dir\build.make CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
+.PHONY : Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -793,6 +841,9 @@ help:
 	@echo ... edit_cache
 	@echo ... rebuild_cache
 	@echo ... rfid.elf
+	@echo ... Core/Src/ESP8266.obj
+	@echo ... Core/Src/ESP8266.i
+	@echo ... Core/Src/ESP8266.s
 	@echo ... Core/Src/main.obj
 	@echo ... Core/Src/main.i
 	@echo ... Core/Src/main.s
@@ -875,6 +926,9 @@ help:
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.obj
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.i
 	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.s
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.obj
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.i
+	@echo ... Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.s
 .PHONY : help
 
 

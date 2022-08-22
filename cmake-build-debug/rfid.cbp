@@ -96,6 +96,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/ESP8266.h">
+			<Option target="rfid.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/MFRC522.h">
 			<Option target="rfid.elf"/>
 		</Unit>
@@ -121,6 +124,9 @@
 			<Option target="rfid.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Inc/stm32f4xx_it.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/ESP8266.c">
 			<Option target="rfid.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Core/Src/main.c">
@@ -294,6 +300,9 @@
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_tim_ex.h">
 			<Option target="rfid.elf"/>
 		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h">
+			<Option target="rfid.elf"/>
+		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_bus.h">
 			<Option target="rfid.elf"/>
 		</Unit>
@@ -319,6 +328,9 @@
 			<Option target="rfid.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_system.h">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_usart.h">
 			<Option target="rfid.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_ll_utils.h">
@@ -379,6 +391,9 @@
 			<Option target="rfid.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c">
+			<Option target="rfid.elf"/>
+		</Unit>
+		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c">
 			<Option target="rfid.elf"/>
 		</Unit>
 		<Unit filename="C:/Users/Muzaffer/CLionProjects/rfid/STM32F407VGTX_FLASH.ld">

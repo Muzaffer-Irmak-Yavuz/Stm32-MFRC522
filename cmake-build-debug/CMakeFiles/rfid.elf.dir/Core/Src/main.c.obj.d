@@ -37,6 +37,7 @@ CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj: \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_pwr_ex.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_spi.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Drivers\STM32F4xx_HAL_Driver\Inc/stm32f4xx_hal_uart.h \
  C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/MFRC522.h \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\stdio.h \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\_ansi.h \
@@ -62,4 +63,17 @@ CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj: \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\sched.h \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\machine\types.h \
  c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\stdio.h \
- C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/integer.h
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/integer.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/ssd1306.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/ssd1306_conf_template.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/ssd1306_fonts.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/ESP8266.h \
+ C\:\Users\Muzaffer\CLionProjects\rfid\Core\Inc/main.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\string.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\_locale.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\strings.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\sys\string.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\ctype.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\stdlib.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\machine\stdlib.h \
+ c\:\users\muzaffer\desktop\gcc-arm-none-eabi-10-2020-q4-major\arm-none-eabi\include\alloca.h

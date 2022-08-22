@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj"
+  "CMakeFiles/rfid.elf.dir/Core/Src/ESP8266.c.obj.d"
   "CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj"
   "CMakeFiles/rfid.elf.dir/Core/Src/main.c.obj.d"
   "CMakeFiles/rfid.elf.dir/Core/Src/ssd1306.c.obj"
@@ -54,6 +56,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj.d"
   "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj"
   "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj.d"
+  "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj"
+  "CMakeFiles/rfid.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d"
   "rfid.elf"
   "rfid.elf.manifest"
   "rfid.elf.pdb"

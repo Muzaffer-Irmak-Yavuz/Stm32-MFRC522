@@ -1,402 +1,193 @@
-/* USER CODE BEGIN Header */
-/**
-  ******************************************************************************
-  * @file           : main.c
-  * @brief          : Main program body
-  ******************************************************************************
-  * @attention
-  *
-  * Copyright (c) 2022 STMicroelectronics.
-  * All rights reserved.
-  *
-  * This software is licensed under terms that can be found in the LICENSE file
-  * in the root directory of this software component.
-  * If no LICENSE file comes with this software, it is provided AS-IS.
-  *
-  ******************************************************************************
-  */
-/* USER CODE END Header */
-/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "MFRC522.h"
 #include "ssd1306.h"
+
 #include "stm32f4xx_hal_uart.h"
+#include "ESP8266.h"
+
 #include <ctype.h>
 #include <string.h>
 #include <stdlib.h>
+
 #define	uchar	unsigned char
 #define	uint	unsigned int
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
 
-/* USER CODE END Includes */
-
-/* Private typedef -----------------------------------------------------------*/
-/* USER CODE BEGIN PTD */
-
-/* USER CODE END PTD */
-
-/* Private define ------------------------------------------------------------*/
-/* USER CODE BEGIN PD */
-/* USER CODE END PD */
-
-/* Private macro -------------------------------------------------------------*/
-/* USER CODE BEGIN PM */
-
-/* USER CODE END PM */
-
-/* Private variables ---------------------------------------------------------*/
 I2C_HandleTypeDef hi2c1;
-
 SPI_HandleTypeDef hspi1;
-
 UART_HandleTypeDef huart4;
 
-/* USER CODE BEGIN PV */
+
 
 char get;
-uchar getdata[16];
-int l,ii;
-uchar senddata[]={52,49,46,46,70,24,0,0,57,41,56,45,66,65,74,66};
-char reset[]={0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00,0x00};
 
-uchar keyA[6] = {0xFf, 0xFf, 0xFF, 0xFF, 0xFF, 0xFF, };
-uchar keyB[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF, };
-/* USER CODE END PV */
+int l;
 
-/* Private function prototypes -----------------------------------------------*/
+
+
 void SystemClock_Config(void);
 static void MX_GPIO_Init(void);
 static void MX_SPI1_Init(void);
 static void MX_I2C1_Init(void);
 static void MX_UART4_Init(void);
-/* USER CODE BEGIN PFP */
-void SPI_mfrc_Init(void);
-void delay(int d);
-/* USER CODE END PFP */
 
-/* Private user code ---------------------------------------------------------*/
-/* USER CODE BEGIN 0 */
+uint32_t cursor_x = 1;
+uint32_t cursor_y = 1;
 
-/* USER CODE END 0 */
+void print_line(uint8_t *String)
+{
+    ssd1306_Fill(0);
+    ssd1306_UpdateScreen();
+    char *line = (char *)malloc(sizeof(char) * 20);
+    if (line == NULL)
+    {
+        return;
+    }
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+    for (uint8_t cursor = 0, line_num = 1; line_num <= 6; cursor+= 19, line_num++)
+    {
+
+        strncpy(line, String + cursor, 19);
+        line[19] = '\0';
+
+        ssd1306_SetCursor(cursor_x,cursor_y);
+        ssd1306_WriteString(line, Font_6x8, 1);
+        ssd1306_UpdateScreen();
+        cursor_y += 10;
+
+        /*
+        if ((line_num - 1) * cursor > strlen(String))
+        {
+            break;
+        }
+         */
+
+    }
+    HAL_Delay(300);
+    cursor_x = 1;
+    cursor_y = 1;
+}
+
+
 
 int main(void)
 {
-  /* USER CODE BEGIN 1 */
-	uchar process, status, checksum1, str[MAX_LEN],cap,findex=0,mystr[16];
-  /* USER CODE END 1 */
 
-  /* MCU Configuration--------------------------------------------------------*/
+    uchar status, str[MAX_LEN], findex=0,mystr[16];
 
-  /* Reset of all peripherals, Initializes the Flash interface and the Systick. */
-  HAL_Init();
-
-  /* USER CODE BEGIN Init */
-
-  /* USER CODE END Init */
-
-  /* Configure the system clock */
-  SystemClock_Config();
-
-  /* USER CODE BEGIN SysInit */
-
-  /* USER CODE END SysInit */
-
-  /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_SPI1_Init();
-  MX_I2C1_Init();
-  MX_UART4_Init();
-  ssd1306_Init();
-  unsigned char transmit_buf[100] = "AT\r\n";
-  unsigned char a[200];
-
-
-
-  HAL_Delay(3000);
-  /* USER CODE BEGIN 2 */
-  //SPI_mfrc_Init();
-  MFRC522_Init();
-
-  /* USER CODE END 2 */
-
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
+    HAL_Init();
+    SystemClock_Config();
+    MX_GPIO_Init();
+    MX_SPI1_Init();
+    MX_I2C1_Init();
+    MX_UART4_Init();
+    ssd1306_Init();
+    MFRC522_Init();
     GPIOA->ODR |= 1<<4;
-
-
-    	HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
-
-
-    	  int c = HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  for (int i = 0; i < 6; i++)
-    	  {
-    		  int offset = 0;
-    		  int y = 1;
-    		  int satir = 15;
-    		  char yazdir[20];
-    		  strncpy(yazdir,a,20);
-        	  ssd1306_SetCursor(3, y);
-    		  ssd1306_WriteString(yazdir, Font_6x8, 1);
-    		  ssd1306_UpdateScreen();
-    		  y += 10;
-    		  offset += 15;
-    	  }
+    unsigned char transmit_buf[100] = "AT\r\n";
+    unsigned char receive_buf[2000];
 
 
 
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
-    	  strcpy(transmit_buf,"AT+GMR\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy((char *)transmit_buf,"AT+GMR\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
-
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  for (int i = 0; i < 6; i++)
-    	  {
-    		  int offset = 0;
-    		  int y = 1;
-    		  int satir = 15;
-    		  char yazdir[20];
-    		  strncpy(yazdir,a+offset,20);
-        	  ssd1306_SetCursor(3, y);
-    		  ssd1306_WriteString(yazdir, Font_6x8, 1);
-    		  ssd1306_UpdateScreen();
-    		  y += 10;
-    		  offset += 15;
-    	  }
-    	  strcpy(transmit_buf,"AT+CIPSERVER=0\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy((char *)transmit_buf,"AT+CIPSERVER=0\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+RST\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+RST\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+RESTORE\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+RESTORE\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CWMODE?\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CWMODE?\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CWMODE=3\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CWMODE=3\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CWMODE?\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CWMODE?\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CWJAP=\"muz\",\"12345678\"\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 5000);
+    strcpy(transmit_buf,"AT+CWJAP=\"muz\",\"12345678\"\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 5000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 5000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CIFSR\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CIFSR\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CIFSR\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CIFSR\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CIFSR\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CIFSR\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  strcpy(transmit_buf,"AT+CIFSR\r\n");
-    	  memset(a,'\0',200);
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 2000);
+    strcpy(transmit_buf,"AT+CIFSR\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 2000);
+    print_line(receive_buf);
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 2000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
-    	  memset(a,'\0',200);
+    strcpy(transmit_buf,"AT+CIPSTART=\"TCP\",\"192.168.223.24\",8080\r\n");
+    ESP8266_TransmitReceive(&huart4, transmit_buf, receive_buf, sizeof(transmit_buf), sizeof(receive_buf), 10000);
+    print_line(receive_buf);
 
-    	  strcpy(transmit_buf,"AT+CIPSTART=\"TCP\",\"192.168.223.24\",8080\r\n");
-
-    	  HAL_UART_Transmit(&huart4, transmit_buf, sizeof(transmit_buf), 10000);
+    while (1)
+    {
 
 
-    	  HAL_UART_Receive(&huart4, a, sizeof(a), 10000);
-    	  for (int i= 0; i <200;i ++)
-    	  {
-    		  if (!isprint(a[i]))
-    			  a[i] = '_';
-    	  }
-    	  ssd1306_SetCursor(3, 10);
-		  ssd1306_WriteString(a, Font_6x8, 1);
-		  ssd1306_UpdateScreen();
+        findex++;
+        status = MFRC522_Request(PICC_REQIDL, str);
 
-  while (1)
-  {
+        if (status == MI_OK)
+        {
 
-    /* USER CODE END WHILE */
-		 findex++;
-	 status = MFRC522_Request(PICC_REQIDL, str);
-
-	  if (status == MI_OK) {
+        }
 
 
+        status = MFRC522_Anticoll(str);
+        if (status == MI_OK)
+        {
 
-	  }
+            sprintf((char *)mystr,"%d:%d:%d:%d",(uchar)str[0],(uchar)str[1],(uchar)str[2],(uchar)str[3]);
+            ssd1306_SetCursor(3, 10);
+            ssd1306_WriteString(mystr, Font_6x8, 1);
+            ssd1306_UpdateScreen();
 
+            if (strstr(receive_buf, mystr) != NULL)
+            {
+                ssd1306_WriteString("AAAAAAAAAAAAAAA", Font_6x8, 1);
+                ssd1306_UpdateScreen();
+            }
 
-	  status = MFRC522_Anticoll(str);
-	  if (status == MI_OK) {
+        }
+        else
+        {
 
-
-		  	ssd1306_SetCursor(3, 10);
-
-			checksum1 = str[0] ^ str[1] ^ str[2] ^ str[3];
-			//HAL_UART_Transmit(&huart1,(uchar *)"\n\rThe card's number is:\n\r", 25, 5000);
-			sprintf((char *)mystr,"%d:%d:%d:%d",(uchar)str[0],(uchar)str[1],(uchar)str[2],(uchar)str[3]);
-			// HAL_UART_Transmit(&huart1,mystr, 18, 5000);
-			ssd1306_WriteString(mystr, Font_6x8, 1);
-			ssd1306_UpdateScreen();
-			HAL_Delay(2000);
-			if (strstr(a,mystr) != NULL)
-			{
-				ssd1306_WriteString("AAAAAAAAAAAAAAA", Font_6x8, 1);
-							ssd1306_UpdateScreen();
-			}
-
-		}
-	  else
-	  {
-
-
-
-	  }
-    /* USER CODE BEGIN 3 */
-  }
-
-
-  /* USER CODE END 3 */
-
+        }
+    }
 }
 
 /**
